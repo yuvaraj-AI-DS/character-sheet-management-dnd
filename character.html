@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="character.css">
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png">
+</head>
+
+<body onload="loadCharacters()">
+
+    <div class="container">
+
+        <div class="top-bar">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                ← Back
+            </button>
+
+            <button class="new-btn" onclick="window.location.href='create-character.html'">
+                + New Character
+            </button>
+        </div>
+
+        <h1>Characters</h1>
+
+        <div id="characterGrid" class="character-grid">
+            <!-- Character Cards -->
+        </div>
+
+    </div>
+
+    <div id="characterModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn" onclick="closeCharacter()">
+                &times;
+            </span>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <script src="character.js"></script>
+    <script src="data.js"></script>
+
+</body>
+</html>

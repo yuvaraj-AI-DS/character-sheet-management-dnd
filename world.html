@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>World Details</title>
+
+    <link rel="stylesheet" href="world.css">
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <button
+                class="back-btn"
+                onclick="window.location.href='worlds.html'">
+
+                ← Back
+
+            </button>
+
+        </div>
+
+        <div class="world-info">
+
+            <h1 id="worldTitle"></h1>
+
+            <p id="worldDescription"></p>
+
+            <p id="worldDate"></p>
+
+        </div>
+
+        <div class="character-section">
+
+            <h2>Characters In This World</h2>
+
+            <div 
+                id="characterList"
+                class ="character-grid">
+
+                No Characters Linked Yet
+
+            </div>
+
+            <button
+                class="link-btn"
+                onclick="alert('Character Linking Coming Soon')">
+
+                Link Character
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="dmModal" class="dm-modal">
+
+    <div class="dm-content">
+
+        <span
+            class="close-btn"
+            onclick="closeDMPanel()">
+
+            ×
+
+        </span>
+
+        <div id="dmBody">
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="world.js"></script>
+
+</body>
+
+</html>

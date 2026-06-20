@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Character</title>
+    <link rel="stylesheet" href="create-character.css">
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="character-form">
+
+            <h1>Create Character</h1>
+
+            <label>Character Name</label>
+            <input
+                type="text"
+                id="characterName"
+                placeholder="Enter Character Name">
+
+            <label>Race</label>
+            <select id="race" onchange="updateInfo()">
+                <option>Human</option>
+                <option>Elf</option>
+                <option>Dwarf</option>
+                <option>Halfling</option>
+                <option>Dragonborn</option>
+                <option>Gnome</option>
+                <option>Half-Elf</option>
+                <option>Half-Orc</option>
+                <option>Tiefling</option>
+            </select>
+
+            <label>Class</label>
+            <select id="characterClass" onchange="updateInfo()">
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Warlock</option>
+                <option>Wizard</option>
+            </select>
+
+            <label>Age</label>
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter Age">
+
+            <label>World</label>
+            <select id="world"
+             placeholder="enter the worlds"
+            >
+            </select>
+            <button
+                class="create-btn"
+                onclick="saveCharacter()">
+                Create Character
+            </button>
+
+            <button
+                class="back-btn"
+                onclick="window.location.href='character.html'">
+                Back
+            </button>
+
+        </div>
+
+        <div class="info-panel" id="infoPanel">
+            <h2>Information</h2>
+
+            <p>
+                Select a race and class.
+                Later we will show descriptions, bonuses and abilities here.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="character.js"></script>
+
+</body>
+</html>

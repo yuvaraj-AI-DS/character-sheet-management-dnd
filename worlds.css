@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:black;
+
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    padding:30px;
+}
+
+.container{
+
+    width:100%;
+}
+
+.top-bar{
+
+    display:grid;
+
+    grid-template-columns:
+    150px 1fr 150px;
+
+    align-items:center;
+
+    margin-bottom:40px;
+}
+
+.page-title{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    color:#ff2d55;
+
+    text-shadow:
+        0 0 10px #ff2d55,
+        0 0 20px #ff2d55,
+        0 0 40px hotpink;
+
+    letter-spacing:3px;
+}
+
+.back-btn,
+.new-btn{
+
+    width:140px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#222;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.back-btn:hover,
+.new-btn:hover{
+
+    background:#ff2d55;
+
+    box-shadow:
+        0 0 15px #ff2d55;
+}
+
+/* =========================
+   CREATE WORLD FORM
+========================= */
+
+.form-container{
+
+    display:none;
+
+    width:600px;
+
+    margin:0 auto 40px auto;
+
+    padding:25px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #1a1a1a,
+        #242424
+    );
+
+    border-radius:15px;
+
+    border:1px solid #333;
+
+    box-shadow:
+        0 0 20px rgba(255,45,85,0.2);
+}
+
+.form-container input,
+.form-container textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#2a2a2a;
+
+    color:white;
+
+    font-size:16px;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder{
+
+    color:#aaa;
+}
+
+.form-container textarea{
+
+    height:150px;
+
+    resize:none;
+}
+
+.form-container button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff2d55;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.form-container button:hover{
+
+    background:#ff4d6d;
+
+    box-shadow:
+        0 0 15px #ff2d55;
+}
+
+/* =========================
+   WORLD CARDS
+========================= */
+
+.world-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(350px,1fr));
+
+    gap:30px;
+
+    margin-top:20px;
+}
+
+.world-card{
+
+    background:
+    linear-gradient(
+        145deg,
+        #1a1a1a,
+        #242424
+    );
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:1px solid #333;
+
+    transition:0.3s;
+
+    min-height:250px;
+}
+
+.world-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#ff2d55;
+
+    box-shadow:
+        0 0 20px rgba(255,45,85,0.4);
+}
+
+.world-card h3{
+
+    font-size:1.6rem;
+
+    color:#ff6b81;
+
+    margin-bottom:15px;
+}
+
+.world-card p{
+
+    line-height:1.6;
+
+    color:#ddd;
+
+    margin-bottom:15px;
+}
+
+.delete-btn{
+
+    margin-top:15px;
+
+    padding:10px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ff2d55;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+
+    background:#ff4d6d;
+
+    transform:scale(1.05);
+}

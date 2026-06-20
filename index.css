@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+    background: url("images/desktop-bg.png") center/cover no-repeat;
+}
+
+.login-container {
+    width: min(90vw, 750px);
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:
+        clamp(40px, 8vw, 100px)
+        clamp(20px, 6vw, 80px);
+
+    box-sizing: border-box;
+
+    background: url("images/panel-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    margin: -10px 0 15px;
+
+    color: red;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+
+    text-shadow:
+        0 5px 10px white,
+        0 0 20px white,
+        0 0 30px white;
+}
+
+input,
+button {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    width: 70%;
+    max-width: 350px;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: red;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-image: url("images/mobile-bg.jpg");
+    }
+
+    .login-container {
+        width: 320px;
+        height: 520px;
+        padding: 50px 30px;
+        background-size: 100% 100%;
+    }
+
+    input,
+    button {
+        width: 25%;
+        max-width: 100px;
+        padding: 8px;
+    }
+}

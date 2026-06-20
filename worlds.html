@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Worlds</title>
+
+    <link rel="stylesheet" href="worlds.css">
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <button class="back-btn"
+                onclick="window.location.href='dashboard.html'">
+                ← Back
+            </button>
+
+            <h1 class="page-title">
+                Worlds
+            </h1>
+
+            <button onclick="showForm()" class="new-btn">
+                + New World
+            </button>
+
+        </div>
+
+        <div id="worldForm" class="form-container">
+
+            <input
+                type="text"
+                id="worldName"
+                placeholder="World Name"
+            >
+
+            <textarea
+                id="worldDescription"
+                placeholder="World Description"
+            ></textarea>
+
+            <button onclick="createWorld()">
+                Save World
+            </button>
+
+        </div>
+
+        <div id="worldGrid" class="world-grid">
+
+        </div>
+
+    </div>
+
+    <script src="worlds.js"></script>
+
+</body>
+
+</html>
